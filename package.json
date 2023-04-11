@@ -2,7 +2,7 @@
   "name": "jianxian",
   "version": "1.0.0",
   "description": "some function collection",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "yarn run clean-dist && webpack --config=configs/webpack/prod.js",
     "clean-dist": "rimraf dist/*",
@@ -16,6 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/hwlv/jianxian.git"
   },
+  "files": ["dist"],
   "keywords": [
     "code check"
   ],

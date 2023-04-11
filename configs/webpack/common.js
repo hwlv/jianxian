@@ -1,6 +1,5 @@
 // shared config (dev and prod)
 const { resolve } = require("path");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./index.ts",
@@ -13,6 +12,7 @@ module.exports = {
       {
         test: [/\.jsx?$/, /\.(ts|tsx)?$/],
         use: ["babel-loader"],
+        // use: ["ts-loader"],
         exclude: /node_modules/,
       },
       {
@@ -29,5 +29,4 @@ module.exports = {
       },
     ],
   },
-  // plugins: [new HtmlWebpackPlugin({ template: "index.html.ejs" })],
 };

@@ -7,9 +7,13 @@ const commonConfig = require("./common");
 module.exports = merge(commonConfig, {
   mode: "production",
   output: {
-    filename: "js/bundle.[contenthash].min.js",
+    filename: "[name].js",
     path: resolve(__dirname, "../../dist"),
     publicPath: "/",
+    library: {
+      name: "jianxian",
+      type: "umd",
+    },
   },
   devtool: "source-map",
   externals: {
